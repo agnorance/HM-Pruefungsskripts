@@ -1,0 +1,9 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+*.xml
+# Datasource local storage ignored files
+/../../../../../../../../../:\Users\David\Documents\Repositories\ZHAW\ZHAW 3. Semester\HM-Pruefungsskripts\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
