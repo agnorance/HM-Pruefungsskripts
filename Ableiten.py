@@ -1,3 +1,7 @@
+'''
+author: DM
+'''
+
 import sympy as sp
 
 
