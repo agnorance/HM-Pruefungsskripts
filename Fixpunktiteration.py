@@ -18,6 +18,7 @@ def dF(x): return np.sin(x + np.pi / 4) / (np.cos(x + np.pi / 4) - 1) ** 2
 print('\nFixpunktiteration a)\n')
 
 xPlot = np.arange(0, np.pi + 0.01, 0.01)
+print(xPlot)
 plt.figure(1)
 plt.plot(xPlot, xPlot, xPlot, F(xPlot), xPlot, np.abs(dF(xPlot)), [xL, xL], [0, np.pi], 'k-.', [xR, xR], [0, np.pi],
          'k-.')
@@ -63,7 +64,6 @@ print('\nFixpunktiteration d)\n')
 
 
 def fixIt(f, x0, epsIncr, lambd):
-    import numpy as np
     k = 0
     notConverged = True
     N = 1000

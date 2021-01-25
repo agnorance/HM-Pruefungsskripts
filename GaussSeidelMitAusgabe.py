@@ -7,9 +7,10 @@ A = np.array([[15, 0, 1],
 y = np.array([[21,
                67,
                44]]).T
-
+print("A:")
+print(A)
 D = np.diag(np.diag(A))
-print("D:")
+print("\nD:")
 print(D)
 R = np.triu(A) - D
 print("\nR:")
