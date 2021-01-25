@@ -5,3 +5,4 @@ SEP HS21 Aufgabe 1
 
 @author: David Mihajlovic
 """
+
