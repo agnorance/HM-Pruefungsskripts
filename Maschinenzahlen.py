@@ -120,3 +120,23 @@ yPossibilities = 2 ** (y + 1)  # + 1 mit Vorzeichen
 
 print("\nPossibilites:")
 print(xPossibilities * (yPossibilities - 1) + 1)  # + 1 wegen 0
+
+###########################
+# Serie 3 Aufgabe 1 #
+###########################
+print("\n#######################\nSerie 3 Aufgabe 1\n#######################\n")
+
+# Dezimalarithmetik
+n = 10  # Stellen
+B = 10  # Basis
+eps_dezimal = B / 2 * B ** -n
+print("eps_dez:", eps_dezimal)
+x = float(str(eps_dezimal)[:-4]) - 1
+x = x * 0.1
+print(x)
+berechenbar = 1. + eps_dezimal
+nicht_berechenbar = 1. + (x * 10 ** (-n - 1))
+print(berechenbar)
+print('{0:.10f}'.format(nicht_berechenbar))
+
+

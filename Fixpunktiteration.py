@@ -14,9 +14,6 @@ def F(x): return 1. / (np.cos(x + np.pi / 4) - 1) + 2
 def dF(x): return np.sin(x + np.pi / 4) / (np.cos(x + np.pi / 4) - 1) ** 2
 
 
-# Achtung: die Ableitung konnte damals mit Matlab berechnet werden. In Python sind wir noch nicht so weit.
-# Allerdings ist auch die Berechnung der Ableitung von Hand nicht wirklich schwer.
-
 # Aufgabe a)
 print('\nFixpunktiteration a)\n')
 

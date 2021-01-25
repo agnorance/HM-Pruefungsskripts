@@ -8,11 +8,6 @@ y = np.array([[21,
                67,
                44]]).T
 
-""" 
-Die 1. und 2. Zeile müssen vertauscht werden, da ansonsten ein
-Diagonal-Element 0 ist und die Diagonaldominanz nicht mehr gegeben ist ! 
-"""
-
 D = np.diag(np.diag(A))
 print("D:")
 print(D)
