@@ -24,10 +24,10 @@ def solveL(L, b):
 
 
 n = 3
-A = np.array(np.mat("20 10 2; "
-                    "30 17 3;"
+A = np.array(np.mat("1 1 1; "
+                    "2 2 5;"
                     "10 6 2"), dtype=np.float)
-b = np.array([5200, 3000, 760], dtype=np.float)
+b = np.array([1, 0, 0], dtype=np.float)
 
 L, R = Fast_LR(A)
 A = np.dot(L, R)

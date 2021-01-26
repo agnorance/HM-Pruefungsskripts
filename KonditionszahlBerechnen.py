@@ -5,11 +5,11 @@ from scipy import linalg
 
 
 # Funktion definieren
-def f(x): return x * np.exp(x)
+def f(x): return (x ** 2) * np.sin(x)
 
 
 # Ableitung definieren
-def df(x): return np.exp(x) * (x + 1)
+def df(x): return (2 * x * np.sin(x)) + (x ** 2 * np.cos(x))
 
 
 # Konditionszahl berechnen und als Funktion returnen
@@ -17,11 +17,13 @@ def K(x): return np.abs(x) * np.abs(df(x)) / np.abs(f(x))
 
 
 # Range und Schrittweite von x...
-x = np.arange(-4, 2.00, 1.00)
+x = np.arange(-4,2.05,0.05)
 # oder für bestimmtes x
 # x = 1
 
 # K = abs(x + 1)
+L = K(x)
+print(L)
 plt.plot(x, K(x), '-'), plt.xlabel('x'), plt.ylabel('K(x)')
 plt.show()
 # b)

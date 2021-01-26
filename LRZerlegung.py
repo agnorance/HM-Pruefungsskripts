@@ -17,9 +17,9 @@ def Fast_LR(A):
     return L, R
 
 
-A = np.array(np.mat("20 10 2; "
-                    "30 17 3;"
-                    "10 6 2"), dtype=np.float)
+A = np.array(np.mat("1 1 1; "
+                    "2 2 5;"
+                    "4 6 8"), dtype=np.float)
 
 L, R = Fast_LR(A)
 print("\nA:")

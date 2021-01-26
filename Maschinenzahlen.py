@@ -58,13 +58,13 @@ eps_dezimal = B / 2 * B ** -n
 print("eps_dez:", eps_dezimal)
 
 # Binärarithmetik
-n = 52  # Stellen
+n = 5  # Stellen
 B = 2  # Basis
 eps_bin = B / 2 * B ** -n
 print("eps_bin:", eps_bin)
 
 # Hexadezimalarithmetik
-n = 14  # Stellen
+n = 2  # Stellen
 B = 16  # Basis
 eps_hexa = B / 2 * B ** -n
 print("eps_hexa:", eps_hexa)
