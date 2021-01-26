@@ -5,3 +5,5 @@ SEP HS21 Aufgabe 6
 
 @author: David Mihajlovic
 """
+
+# separat pdf

@@ -1,6 +1,19 @@
 import numpy as np
-from LRZerlegung import Fast_LR
 
+
+def Fast_LR(A):
+    m, n = A.shape
+    L = np.eye(m)
+    R = A.astype('float')
+
+    for k in range(n - 1):
+        L[k + 1:, k] = R[k + 1:, k] / R[k, k]
+        R[k + 1:, k:] = R[k + 1:, k:] - np.outer(L[k + 1:, k], R[k, k:])
+    print("\nL:")
+    print(L)
+    print("\nR:")
+    print(R)
+    return L, R
 
 # Löse Rx = b
 def solveR(R, b):
@@ -23,10 +36,10 @@ def solveL(L, b):
     return x
 
 
-n = 3
-A = np.array(np.mat("1 1 1; "
-                    "2 2 5;"
-                    "10 6 2"), dtype=np.float)
+n = 9
+A = np.array([[1, 1, 1],
+             [2, (2+2**-52), 5],
+             [4, 6, 8]])
 b = np.array([1, 0, 0], dtype=np.float)
 
 L, R = Fast_LR(A)
